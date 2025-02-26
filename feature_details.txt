@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Additional updates to the feature details.
+=======
+Description of a new feature.
+>>>>>>> feature-update
