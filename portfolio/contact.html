@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Contact</h1>
+    <form id="contactForm" onsubmit="return false;">
+      <label>
+        Name
+        <input id="name" type="text" placeholder="Your name" required />
+      </label>
+      <br />
+      <label>
+        Your Email
+        <input id="email" type="email" placeholder="your@email.com" required />
+      </label>
+      <br />
+      <label>
+        Message
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+      </label>
+      <br />
+      <button id="sendBtn" type="button">Send</button>
+    </form>
+
+    <script src="./contact.js"></script>
+  </body>
+</html>
