@@ -1,0 +1,3 @@
+import { Code, Mail, Network } from 'lucide-react'
+import { profile } from '../data/profile'
+export default function Footer() { return <footer><div className="footer-main"><a className="brand" href="#home"><span className="brand-mark">NS</span><span>{profile.name}</span></a><p>{profile.role}</p><div className="footer-social"><a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub"><Code size={17} /></a><a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><Network size={17} /></a><a href={`mailto:${profile.email}`} aria-label="Email"><Mail size={17} /></a></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} {profile.name}</span><span>Designed & built with intention.</span></div></footer> }
