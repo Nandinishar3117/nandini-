@@ -1,0 +1,3 @@
+import { ArrowUpRight, Code, FileDown, Network } from 'lucide-react'
+import { profile } from '../data/profile'
+export default function DeveloperSection() { return <section className="developer-band"><div><p className="eyebrow">07 / Keep exploring</p><h2>Building, learning<br /><em>& growing.</em></h2></div><div className="developer-links"><a href={profile.github} target="_blank" rel="noreferrer"><Code size={18} /> GitHub <ArrowUpRight size={15} /></a><a href={profile.linkedin} target="_blank" rel="noreferrer"><Network size={18} /> LinkedIn <ArrowUpRight size={15} /></a><a href={profile.resume} target="_blank" rel="noreferrer"><FileDown size={18} /> Resume <ArrowUpRight size={15} /></a></div></section> }
