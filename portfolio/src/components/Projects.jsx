@@ -1,0 +1,7 @@
+import { ArrowUpRight, Code, ExternalLink } from 'lucide-react'
+import { projects } from '../data/projects'
+import SectionHeading from './SectionHeading'
+
+export default function Projects() {
+  return <section id="projects" className="section-shell"><SectionHeading eyebrow="03 / Selected work" title="Projects with a point of view" children="A few practical builds that reflect what I’m learning and where I want to go next." /><div className="projects-list">{projects.map(project => <article className="project-card reveal" key={project.number}><div className="project-top"><span className="project-number">{project.number}</span><div className="project-actions"><a href={project.github} target="_blank" rel="noreferrer" aria-label={`GitHub for ${project.name}`}><Code size={17} /></a><a href={project.demo} aria-label={`Live demo for ${project.name}`}><ExternalLink size={17} /></a></div></div><h3>{project.name}</h3><p className="project-description">{project.description}</p><p className="project-problem"><strong>Why it matters</strong>{project.problem}</p><div className="tag-list">{project.technologies.map(item => <span key={item}>{item}</span>)}</div><div className="project-footer"><a className="text-link" href={project.github} target="_blank" rel="noreferrer">View details <ArrowUpRight size={15} /></a><a className="project-github" href={project.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={15} /></a></div></article>)}</div></section>
+}
